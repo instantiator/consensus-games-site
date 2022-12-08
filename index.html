@@ -201,10 +201,11 @@
                 <div class="row">
                     <div class="col-lg-4 ms-auto">
                         <p class="lead">
-                            The service is modular, broken into:
+                            The service is designed to be modular, and broken into:
                             <ul class="lead">
                                 <li>An engine - to create and manage the games</li>
                                 <li>Any number of nodes - to interact with social networks</li>
+                                <li>A shared database - to track games, players, and votes</li>
                             </ul>
                         </p>
                         <p class="lead">
@@ -212,14 +213,17 @@
                             and polls the shared database for information about games.
                         </p>
                         <p class="lead">
-                            When there's a new move or a new game, it posts a new board.
-                            When a user interacts with a board, it updates the
+                            When there's a new move or a new game, each node posts a new board.
+                            When a user interacts with that board post, the node updates the
                             shared database to keep track of all the votes.
                         </p>
                     </div>
                     <div class="col-lg-4 me-auto">
                         <p class="lead">
-                            The service is extensively tested. The build process takes
+                            The whole service is extensively tested.
+                        </p>
+                        <p class="lead">
+                            The build process takes
                             place as Docker assembles each container, and must
                             pass all unit tests and feature tests before it can complete.
                         </p>
