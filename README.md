@@ -1,1 +1,3 @@
-![](images/banner-image.png "Banner image, decorative. Shows the top of a chess board, the ICGames icon (a neon chess king), the title International Consensus Games, and the Mastodon account: icgames@botsin.space")
+# consensus-games-site
+
+Hosts the (very simple!) website for International Consensus Games.
