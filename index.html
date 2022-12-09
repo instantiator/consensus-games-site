@@ -30,8 +30,14 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- mastodon timeline -->
+        <link rel="stylesheet" href="mastodon/mastodon-timeline.css" />
+        <script src='mastodon/mastodon-timeline.js'></script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -150,23 +156,41 @@
                             title="A pixellated chess board in the starting position, as used by Consensus Chess games"
                             />
                     </p>
-                    <p class="lead">
-                        To play, visit us on Mastodon, and find a game you'd like to join. Pick your side (black or white).
-                    </p>
-                    <p class="lead">
-                        Vote for a move by replying to a post with a board in it when it is your turn to play.
-                        Your vote should indicate the starting square and ending square, separated by a hyphen.
-                        <br/>eg. e2 - e4
-                    </p>
-                    <p class="lead">
-                        When the turn is up, all the votes will be tallied, and the most popular will be chosen for your team.
-                        It's really that simple!
-                    </p>
-                    <p class="lead">
-                        After that, it will be the other team's turn to play...
-                    </p>
                     </div>
                     <div class="col-lg-2 me-auto"></div>
+                </div>
+
+                <div class="row text-white">
+                    <div class="col-lg-4 ms-auto">
+                        <p class="lead">
+                            To play, visit us on Mastodon, and find a game you'd like to join. Pick your side (black or white).
+                        </p>
+                        <p class="lead">
+                            Vote for a move by replying to a post with a board in it when it is your turn to play.
+                            Your vote should indicate the starting square and ending square, separated by a hyphen.
+                            <br/>eg. e2 - e4
+                        </p>
+                        <p class="lead">
+                            When the turn is up, all the votes will be tallied, and the most popular will be chosen for your team.
+                            It's really that simple!
+                        </p>
+                        <p class="lead">
+                            After that, it's the other team's turn to play. We'll post the new board for them to deliberate over.
+                        </p>
+                        <p class="lead">
+                            Check out our feed to see what it looks like...
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 me-auto">
+
+                        <div id="mt-timeline" class="mt-timeline">
+                            <div id="mt-body" class="mt-body">
+                                <div class="loading-spinner"></div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
                 <div class="text-center mt-4">
